@@ -1,0 +1,36 @@
+Logistic Regression Results
+------------------------------
+Accuracy : 0.9825
+Precision: 0.9861
+Recall   : 0.9861
+ROC-AUC  : 0.9954
+
+Classification Report
+              precision    recall  f1-score   support
+
+   malignant       0.98      0.98      0.98        42
+      benign       0.99      0.99      0.99        72
+
+    accuracy                           0.98       114
+   macro avg       0.98      0.98      0.98       114
+weighted avg       0.98      0.98      0.98       114
+
+Figure(640x480)
+Figure(640x480)
+
+Threshold Tuning
+------------------------------
+Threshold=0.30 | Accuracy=0.9825 | Precision=0.9730 | Recall=1.0000
+Threshold=0.40 | Accuracy=0.9825 | Precision=0.9861 | Recall=0.9861
+Threshold=0.50 | Accuracy=0.9825 | Precision=0.9861 | Recall=0.9861
+Threshold=0.60 | Accuracy=0.9561 | Precision=0.9855 | Recall=0.9444
+Threshold=0.70 | Accuracy=0.9474 | Precision=0.9853 | Recall=0.9306
+Figure(640x480)
+
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 772, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/connection.py", line 37, in get_or_create_client
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/daemon.py", line 124, in start_daemon
+TimeoutError: Timed out waiting for artifact tool daemon socket. Set ARTIFACT_TOOL_RPC_DAEMON_STARTUP_TIMEOUT_S=<seconds> to increase the limit.
